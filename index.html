@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação 2 WEB2</title>
+    <style>
+        .questao {
+            border: 1px solid green;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+        .questao ul {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 2px;
+        }
+        .questao li {
+            display: inline-block;
+        }
+        .questao li a {
+            display: inline-block;
+            background: #444;
+            color: #FFF;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .questao input {
+            margin-bottom: 5px; 
+        }
+
+        .resposta3 table {
+            border-collapse: collapse;
+        }
+
+        .resposta3 th {
+            padding: 0px 10px;
+        }
+
+        .resposta3 td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="questao">
+        <h1>Questão 1</h1>
+        <ul>
+            <li>
+                <label>Idade:</label>
+                <input type="text" id="input-pessoa-idade">
+            </li>
+            <li>
+                <label>Peso:</label>
+                <input type="text" id="input-pessoa-peso">
+            </li>
+            <li>
+                <label>Sexo(m ou f):</label>
+                <input type="text" id="input-pessoa-sexo">
+            </li>
+        </ul>
+        <span>Pessoas cadastradas: </span>
+        <span id="count-pessoas">0</span>
+        <input type="submit" id="submit-pessoa" value="Enviar">
+        
+        <div id="resposta1"></div>
+    </div>
+
+
+    <div class="questao">
+        <h1>Questão 2</h1>
+        <span id="resposta2"></span>
+        <label>Digite quantas xícaras de café você tomou hoje: </label>
+        <input type="text" id="input-num-cafe">
+        <input type="submit" id="submit-cafe" value="Enviar">
+    </div>
+
+    <div class="questao">
+        <h1>Questão 3</h1>
+        <ul>
+            <li>
+                <label>Nome do candidato:</label>
+                <input type="text" id="input-candidato-nome">
+            </li>
+            <li>
+                <label>Numero de votos:</label>
+                <input type="text" id="input-candidato-votos">
+            </li>
+        </ul>
+        <span>Candidatos cadastradas: </span>
+        <span id="count-candidatos">0</span>
+        <input type="submit" id="submit-candidato" value="Enviar">
+        
+        <div id="resposta3" class="resposta3"></div>
+    </div>
+
+
+    <div class="questao">
+        <h1>Questão 4</h1>
+        <img id="resposta4" src="laranja.jpg">
+    </div>
+
+
+    <script src="av2.js"></script>
+</body>
+</html>
